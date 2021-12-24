@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#Jtabla').DataTable({
+        select: true,
         "scrollX": true,
         ajax: {
             url: 'data/response.json',
