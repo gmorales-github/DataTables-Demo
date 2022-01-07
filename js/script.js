@@ -1,9 +1,12 @@
 $(document).ready(function() {
+    var url = 'data/response.json'
+
     $('#Jtabla').DataTable({
+        destroy: true,
         select: true,
         "scrollX": true,
         ajax: {
-            url: 'data/response.json',
+            url: `${url}`,
             dataSrc: ''
         },
         "columns": [
