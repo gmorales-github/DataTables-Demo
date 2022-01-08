@@ -3,6 +3,10 @@ $(document).ready(function() {
 
     $('#Jtabla').DataTable({
         destroy: true,
+        dom: 'lfrtiBp',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
         select: true,
         "scrollX": true,
         ajax: {
